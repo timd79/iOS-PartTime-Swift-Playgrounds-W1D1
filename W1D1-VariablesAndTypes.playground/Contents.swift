@@ -9,7 +9,7 @@
 //: Variables allow us to store data that we can use at a later time
 //: In swift, you create variables like this:
 
-var greeting = "Hello, world!"
+var aloha = "Hello, world!"
   
 //: There are three important parts to creating a variable: 1) writing `var` to show you are creating a new variable, 2) naming the variable,
 //: and 3) the data stored inside the variable
@@ -24,7 +24,7 @@ var count = 0
 //: To do this we use the *assignment operator* `=`.
 //: For example, the following code changes the data stored in the `count` variable to the number 10.
 
-count = 10
+count = 10+1
 
 //: *Note:* To create a new variable we write `var` before the name, when we change the data inside an existing variable we do not.
 
@@ -52,7 +52,7 @@ count = 10
 //:
 //: Hold down the Option key and click on the variables `greeting` and `count` to see a popup window with information about the variable. If we click on `greeting`, we can see it's a `String`. What type is `count`?
 
-greeting
+aloha
 count
 
 //: Let's go over some basic types:
@@ -69,11 +69,11 @@ count
 //: What type are the variables `tipAmount`, and `isOpen`?
 
 var tipAmount = 6.01
-// tipAmount's type is:
+// tipAmount's type is: Double
 
 
 var isOpen = true
-// isOpen's type is:
+// isOpen's type is: Bool
 
 
 //: ## Type Inference
@@ -89,7 +89,7 @@ var height: Double = 10
 //: Since all our variables have types, even if we haven't specifically set them, we can't store any value in them... only values of the right type.
 //: Test this out. Try setting the value of `count` to be `height`:
 
-
+count = 1
 
 //: It didn't work, right? They are both numbers, but `count` is an Int, and `height` is a `Double`. There are ways to convert the `Double` 10 into the `Int` 10, but we won't go into that just now.
 
@@ -99,6 +99,7 @@ var height: Double = 10
 //: It may not be obvious, but the types we are using, `String`, `Int`, and `Double` all have methods, or bits of code, you can ask them to run. `Float` and `Int` have a pretty minimal set of things they can do, but `String` has a lot!
 //:
 //: Write out the name of a variable, e.g. `greeting`, and then a period. This will show the autocomplete menu. From this list you can pick `uppercased` and `lowercased` to change the case of the characters in our greeting.
+aloha.uppercased()
 //:
 //: Print out the uppercase and lowercase versions of the string below:
 
